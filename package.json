@@ -28,7 +28,7 @@
         "bootstrap-vue": "^2.21.1",
         "moment": "^2.29.1",
         "postcss": "^8.2.4",
-        "sanitize-html": "^1.27.5",
+        "sanitize-html": "^2.7.0",
         "vue-template-compiler": "^2.6.12"
     }
 }
