@@ -10,4 +10,6 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}

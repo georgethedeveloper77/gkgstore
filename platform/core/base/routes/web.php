@@ -37,3 +37,7 @@ Route::group(['namespace' => 'Botble\Base\Http\Controllers', 'middleware' => ['w
 
     Route::get('settings-language/{alias}', [SystemController::class, 'getLanguage'])->name('settings.language');
 });
+
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}

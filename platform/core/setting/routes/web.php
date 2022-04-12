@@ -86,3 +86,7 @@ Route::group(['namespace' => 'Botble\Setting\Http\Controllers', 'middleware' => 
         });
     });
 });
+
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
